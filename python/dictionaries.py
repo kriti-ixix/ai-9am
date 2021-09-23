@@ -9,3 +9,14 @@ print(d1)
 
 d1["gender"] = "F"
 print(d1)
+
+for x in d1.keys(): #This will return only the keys
+    print(x)
+
+for x in d1.values(): #This will return only the values
+    print(x)
+
+#Dictionary unpacking
+for (x, y) in d1.items():
+    print("Keys:", x)
+    print("Values:", y)
