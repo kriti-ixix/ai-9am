@@ -1,0 +1,25 @@
+<html>
+
+    <head>
+        <title>Diabetes Model</title>
+    </head>
+
+    <body>
+        <h1>User Form</h1>
+        <br>
+        <form action="/prediction" method="post">
+            <b>Glucose: </b> <input type="number" name="glucose" placeholder="Enter glucose">
+            <br><br>
+            <b>BMI: </b> <input type="number" name="bmi" placeholder="Enter BMI">
+            <br><br>
+            <b>Age: </b> <input type="number" name="age" placeholder="Enter age">
+            <br><br>
+            <input type="submit">
+        </form>
+
+        <br><br>
+        <b>Prediction: </b> {{ output }}
+
+    </body>
+
+</html>
